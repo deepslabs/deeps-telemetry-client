@@ -1,0 +1,16 @@
+[package]
+name = "dsn-telemetry-client"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+reqwest = { version = "0.11", default-features = false, features = ["rustls-tls", "json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["full"] }
+log = "0.4"
+env_logger = "0.10"
+lazy_static = "1.4.0"
+
+[dev-dependencies]
+rand = "0.8"
