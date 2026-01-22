@@ -1,5 +1,5 @@
 [package]
-name = "dsn-telemetry-client"
+name = "sxn-telemetry-client"
 version = "0.1.0"
 edition = "2021"
 
