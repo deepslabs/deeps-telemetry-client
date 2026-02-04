@@ -33,6 +33,7 @@ pub struct DeviceStatus {
     pub device_id: String,
     pub device_owner: String,
     pub device_version: String,
+    pub device_type: u8,
     pub peer_id: String,
     #[serde(default)]
     pub peers_count: u32,
@@ -210,6 +211,10 @@ pub fn set_device_owner(device_owner: String) {
 
 pub fn set_device_version(version: String) {
     DEVICE_STATUS.write().unwrap().device_version = version;
+}
+
+pub fn set_device_type(device_type: u8) {
+    DEVICE_STATUS.write().unwrap().device_type = device_type;
 }
 
 pub fn set_peer_id(peer_id: String) {
