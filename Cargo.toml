@@ -1,5 +1,5 @@
 [package]
-name = "sxn-telemetry-client"
+name = "deeps-telemetry-client"
 version = "0.1.0"
 edition = "2021"
 
